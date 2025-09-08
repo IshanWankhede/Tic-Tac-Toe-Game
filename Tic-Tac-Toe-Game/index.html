@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="msg-container hide">
+        <div class="big hide2"><img src="medal.png" alt=""></div>
+        <p id="msg" class="animation0">Winner</p>
+        <button id="new">New Game</button>
+    </div>
+    <div class="main">
+        <h1 class="titlo">Tic Tac Toe</h1>
+        <div class="sepration">
+            <div class="in"></div>
+        </div>
+        <div class="mode-selection">
+            <button id="pvp">Player vs Player</button>
+            <button id="pvc">Player vs Computer</button>
+        </div>
+
+        <div class="xo hide1">
+            <div class="o boz">O</div>
+            <div class="x boz">X</div>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">Reset Game</button>
+    </div>
+    <audio id="click-sound" src="/audios/click.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="/audios/hurray.mp3" preload="auto"></audio>
+    <audio id="draw-sound" src="/audios/draw.mp3" preload="auto"></audio>
+    <audio id="bg-sound" src="/audios/background.mp3" loop autoplay preload="auto"></audio>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
